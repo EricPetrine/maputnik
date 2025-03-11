@@ -5,7 +5,8 @@
   "type": "module",
   "main": "''",
   "scripts": {
-    "start": "vite",
+    "dev": "vite",
+    "start": "echo Starting the development server && vite",
     "build": "tsc && vite build --base=/maputnik/",
     "build-desktop": "tsc && vite build --base=/ && cd desktop && make",
     "i18n:refresh": "i18next 'src/**/*.{ts,tsx,js,jsx}'",
