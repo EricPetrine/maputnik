@@ -4,11 +4,11 @@ import { defineConfig } from "vite";
 import istanbul from "vite-plugin-istanbul";
 
 export default defineConfig({
-  base: "/maputnik/", // During local development, files on the Vite server will be 'served' relative to this
+  base: "/maputnik", // During local development, files on the Vite server will be 'served' relative to this
   server: {
     port: 5180,
   },
-  publicDir: "../AccuWeather.Web.Backend/wwwroot/maputnik",
+  publicDir: "../AccuWeather.Web.Backend/wwwroot",
   build: {
     outDir: "../AccuWeather.Web.Backend/wwwroot/maputnik", // This is where build files will be pushed to (not during local development)
     emptyOutDir: true, // This ensures the directory is empty before
